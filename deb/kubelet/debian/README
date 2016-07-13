@@ -1,0 +1,6 @@
++The Debian Package kubelet
++----------------------------
++
++ The node agent of Kubernetes
++
++ -- Mike Danese <mikedanese@google.com>  Wed, 13 Jul 2016 11:00:57 -0700

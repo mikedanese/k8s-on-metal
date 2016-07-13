@@ -1,0 +1,14 @@
+# Defaults for kubelet initscript
+# installed at /etc/default/kubelet by the maintainer scripts
+
+# Additional options that are passed to the Daemon.
+KUBELET_OPTS="${KUBELET_OPTS:-} --address=0.0.0.0"
+KUBELET_OPTS="${KUBELET_OPTS:-} --allow-privileged=true"
+KUBELET_OPTS="${KUBELET_OPTS:-} --enable-server"
+KUBELET_OPTS="${KUBELET_OPTS:-} --enable-debugging-handlers"
+KUBELET_OPTS="${KUBELET_OPTS:-} --config=/etc/kubernetes/manifests"
+KUBELET_OPTS="${KUBELET_OPTS:-} --network-plugin=cni"
+KUBELET_OPTS="${KUBELET_OPTS:-} --network-plugin-dir=/etc/cni/net.d"
+KUBELET_OPTS="${KUBELET_OPTS:-} --cluster-dns=10.0.0.10"
+KUBELET_OPTS="${KUBELET_OPTS:-} --cluster-domain=cluster.local"
+KUBELET_OPTS="${KUBELET_OPTS:-} --v=2"
